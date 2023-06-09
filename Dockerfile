@@ -5,5 +5,6 @@ RUN dnf install -y nodejs18
 COPY /nginx/nginx.conf  /etc/nginx/nginx.conf
 RUN mkdir /app
 COPY /src  /app
+WORKDIR /app
 CMD ["sh", "-c", "nginx -g \"daemon off;\" "]
 EXPOSE 3000
