@@ -6,5 +6,8 @@ COPY /nginx/nginx.conf  /etc/nginx/nginx.conf
 RUN mkdir /app
 COPY /src  /app
 WORKDIR /app
-CMD ["sh", "-c", "nginx -g \"daemon off;\" "]
+CMD ["sh", "-c", "  nginx -g \"daemon off;\"   &&\
+                    mv /usr/bin/node-18 /usr/bin/node  &&\
+                    mv /usr/bin/npm-18 /usr/bin/npm    &&\  
+                    mv /usr/bin/npx-18 /usr/bin/npx "]
 EXPOSE 3000
