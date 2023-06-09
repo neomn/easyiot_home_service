@@ -1,8 +1,9 @@
 FROM fedora:rawhide
-RUN dnf update 
+RUN dnf update -y 
 RUN dnf install -y  nginx-1.24.0
-RUN dnf install -y nodejs-18.16.0
+RUN dnf install -y nodejs18
+COPY /nginx/nginx.conf  /etc/nginx/nginx.conf
 RUN mkdir /app
 COPY /src  /app
-COPY /nginx/nginx.conf  /etc/nginx/nginx.conf
+CMD ["sh", "-c", "nginx -g \"daemon off;\" "]
 EXPOSE 3000
