@@ -1,6 +1,8 @@
 <template>
-  <div class="bg-gray-700">
-    <h1> this is top bar component </h1> 
+  <div class=" ">
+    <div class="w-11/12 h-8 border boder-gray-400 rounded-lg">
+
+    </div>
   </div>
 </template>
 
