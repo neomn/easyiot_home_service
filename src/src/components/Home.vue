@@ -12,7 +12,6 @@
 import Background   from './Background.vue'
 import TopBar       from './TopBar.vue'
 import MyBody       from './MyBody.vue'
-import MyFooter     from './MyFooter.vue'
 
 export default {
   components: {Background, TopBar, MyBody, MyFooter} 

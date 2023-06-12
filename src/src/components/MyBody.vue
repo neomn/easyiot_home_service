@@ -1,38 +1,17 @@
 <template>
-  <div class="text-gray-100">
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
-    body <br>
+  <div>
+    this is body
+    <MyFooter/>
   </div>
 </template>
+
+
+<script>
+import   MyFooter   from './MyFooter.vue'
+
+export default {
+  components: {MyFooter}
+
+
+}
+</script>
