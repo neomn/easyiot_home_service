@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <MyFooter class="justify-self-end w-full"/>
+    <MyFooter class="invisible justify-self-end w-full"/>
   </div>
 </template>
 
