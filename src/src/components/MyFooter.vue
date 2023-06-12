@@ -1,5 +1,7 @@
 <template>
-  <div class="text-gray-100">
-    <h1>footer</h1>
+  <div class="flex">
+    <div class="w-full border">
+      this is footer 
+    </div>
   </div>
 </template>

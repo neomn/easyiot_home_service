@@ -1,7 +1,6 @@
 <template>
-  <div>
-    this is body
-    <MyFooter/>
+  <div class="flex flex-col">
+    <MyFooter class="justify-self-end w-full"/>
   </div>
 </template>
 
