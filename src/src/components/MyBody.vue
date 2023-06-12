@@ -1,4 +1,5 @@
 <template>
-  <div>
+  <div class="text-gray-100">
+    body
   </div>
 </template>

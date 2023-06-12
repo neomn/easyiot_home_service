@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-col">
     <Background class="z-0 fixed h-screen w-full"/>
-    <TopBar class="z-10"/>
-    <MyBody/>
-    <MyFooter/>
+    <TopBar class="invisible z-10"/>
+    <MyBody class="invisible z-10 h-96 border "/>
+    <MyFooter class="invisible z-10 sticky bottom-0 border"/>
   </div>
 </template>
 
