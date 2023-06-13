@@ -4,10 +4,10 @@
       <img src='../assets/iot_logo.png'>
       <h1>IOT Made Easy</h1>
     </div>
-    <div>
-      <Button/>
-      <Button/>
-      <Button/>
+    <div class="flex justify-center mt-44">
+      <MyButton/>
+      <MyButton/>
+      <MyButton/>
     </div>
     <MyFooter class="invisible justify-self-end w-full"/>
   </div>
@@ -16,10 +16,10 @@
 
 <script>
 import   MyFooter   from './MyFooter.vue'
-import   Button   from './Button.vue'
+import   MyButton   from './MyButton.vue'
 
 export default {
-  components: {MyFooter, Button}
+  components: {MyFooter, MyButton}
 
 
 }
