@@ -6,7 +6,7 @@
     </div>
     <div class="flex justify-center mt-44">
       <MyButton text='How It Works'/>
-      <MyButton text='Get Started'/>
+      <MyButton text='Create Account'/>
       <MyButton text='Login'/>
     </div>
     <MyFooter class="invisible justify-self-end w-full"/>
