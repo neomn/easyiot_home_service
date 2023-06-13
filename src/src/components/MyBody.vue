@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col">
-    <div>
-      <h1>Easy</h1>
-      <img src='../assets/iot.png'>
+    <div class="flex flex-col justify-center items-center text-gray-400">
+      <img src='../assets/iot_logo.png'>
+      <h1>IOT Made Easy</h1>
     </div>
     <MyFooter class="invisible justify-self-end w-full"/>
   </div>
