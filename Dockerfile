@@ -5,11 +5,11 @@ RUN dnf install -y nodejs18
 COPY /nginx/nginx.conf  /etc/nginx/nginx.conf
 RUN mkdir /app
 COPY /src  /app
+RUN mkdir /startup_script
+COPY docker_cmd_script.sh /startup_script/docker_cmd_script.sh
+RUN chmod +x /startup_script/docker_cmd_script.sh
 WORKDIR /app
 EXPOSE 3000 # for production environment
 EXPOSE 3001 # for development environment
-CMD ["sh", "-c", "  nginx -g \"daemon off;\"                &&\
-                    ln -s /usr/bin/node-18 /usr/bin/node    &&\
-                    ln -s /usr/bin/npm-18 /usr/bin/npm      &&\  
-                    ln -s /usr/bin/npx-18 /usr/bin/npx "]
+CMD ["/startup_script/docker_cmd_script.sh"]
 
