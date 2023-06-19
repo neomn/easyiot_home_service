@@ -9,4 +9,5 @@ RUN mkdir /startup_script
 COPY docker_cmd_script.sh /startup_script/docker_cmd_script.sh
 RUN chmod +x /startup_script/docker_cmd_script.sh
 WORKDIR /app
+EXPOSE 80
 CMD ["/startup_script/docker_cmd_script.sh"]
