@@ -1,3 +1,4 @@
+# this docker file is suitable for development purposes and not prosuction environment
 FROM fedora:rawhide
 RUN dnf update -y 
 RUN dnf install -y  nginx-1.24.0
