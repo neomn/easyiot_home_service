@@ -1,3 +1,6 @@
+# this docker compose file is written only for development purposes
+# its suit when u r trying to develop and add features to this service
+
 services:
   
   homec:
