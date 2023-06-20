@@ -5,9 +5,9 @@
       <h1>IOT Made Easy</h1>
     </div>
     <div class="flex justify-center mt-44">
-      <MyButton text='How It Works'/>
-      <MyButton text='Create Account'/>
-      <MyButton text='Login'/>
+      <MyButton text='How It Works' id= hint/>
+      <MyButton text='Create Account' id='register'/>
+      <MyButton text='Login' id="login"/>
     </div>
     <MyFooter class="invisible justify-self-end w-full"/>
   </div>
