@@ -1,0 +1,13 @@
+services:
+  
+  homec:
+    image: home
+    container_name: homec
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - type: bind
+        src: ./src
+        target: /app
+    ports:
+      - 3001:3001
