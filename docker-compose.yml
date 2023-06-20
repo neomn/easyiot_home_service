@@ -1,5 +1,7 @@
 # this docker compose file is written only for development purposes
 # its suit when u r trying to develop and add features to this service
+# after running docker compose up -d , open a web browser and head to the 
+# localhost:3000 
 
 services:
   
@@ -15,4 +17,8 @@ services:
         source: ./src
         target: /app
     ports:
-      - 3001:3001
+      - 3000:81
+    command: /bin/sh -c " ln -s /usr/bin/node-18 /usr/bin/node  &&\
+                          ln -s /usr/bin/npm-18 /usr/bin/npm    &&\ 
+                          ln -s /usr/bin/npx-18 /usr/bin/npx    &&\ 
+                          npm run dev                           "
