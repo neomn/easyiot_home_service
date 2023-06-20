@@ -5,9 +5,9 @@
       <h1>IOT Made Easy</h1>
     </div>
     <div class="flex justify-center mt-44">
-      <MyButton text='How It Works' id= 'hint'/>
-      <MyButton text='Create Account' id='register'/>
-      <MyButton text='Login' id="login"/>
+      <MyButton text='How It Works'   @click="hint"/>
+      <MyButton text='Create Account' @click="register"/>
+      <MyButton text='Login'          @click="login"/>
     </div>
     <MyFooter class="invisible justify-self-end w-full"/>
   </div>
@@ -25,7 +25,7 @@ export default {
       
     },
     login(){
-      
+      console.log('login')
     },
     register(){
       
