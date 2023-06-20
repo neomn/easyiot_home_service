@@ -12,7 +12,7 @@ services:
     tty: true
     volumes:
       - type: bind
-        src: ./src
+        source: ./src
         target: /app
     ports:
       - 3001:3001
