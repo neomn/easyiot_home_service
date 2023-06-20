@@ -4,7 +4,9 @@
 services:
   
   homec:
-    image: home
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: homec
     restart: unless-stopped
     tty: true
