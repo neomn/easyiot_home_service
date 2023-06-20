@@ -5,7 +5,7 @@
       <h1>IOT Made Easy</h1>
     </div>
     <div class="flex justify-center mt-44">
-      <MyButton text='How It Works' id= hint/>
+      <MyButton text='How It Works' id= 'hint'/>
       <MyButton text='Create Account' id='register'/>
       <MyButton text='Login' id="login"/>
     </div>
@@ -19,8 +19,17 @@ import   MyFooter   from './MyFooter.vue'
 import   MyButton   from './MyButton.vue'
 
 export default {
-  components: {MyFooter, MyButton}
-
-
+  components: {MyFooter, MyButton},
+  methods:{
+    hint(){
+      
+    },
+    login(){
+      
+    },
+    register(){
+      
+    }
+  }
 }
 </script>
